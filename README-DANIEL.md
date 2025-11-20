@@ -1,1 +1,8 @@
-# 🚀 Meu Projeto de Automação RWA\n\n## Desenvolvido por Daniel Reis\n\n### Testes automatizados desenvolvidos:\n- [ ] Login\n- [ ] Checkout\n- [ ] Dashboard
+# 🚀 Meu Projeto de Automação RWA
+
+## Desenvolvido por Daniel Reis
+
+### Testes automatizados desenvolvidos:
+- [ ] Login
+- [ ] Checkout
+- [ ] Dashboard
