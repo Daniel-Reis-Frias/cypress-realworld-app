@@ -64,7 +64,7 @@ class SignupFail{
     }
 
     testCase2(firstname,lastname,username,password,wrongpass){
-        //cy.get(this.selectorsList().signupButton).click()
+        
         cy.get(this.selectorsList().firstnameField).type(firstname)
         cy.get(this.selectorsList().lastnameField).type(lastname)
         cy.get(this.selectorsList().createUsernameField).type(username)
