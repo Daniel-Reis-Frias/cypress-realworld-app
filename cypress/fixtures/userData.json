@@ -1,0 +1,19 @@
+{
+    "userSuccess":{
+        "userName": "Judah_Dietrich50",
+        "userPassword": "s3cret"
+    },
+    "userFail":{
+        "userName": "wrongName",
+        "userPassword": "wrongPass"
+    },
+    "userSignup":{
+        "firstName": "Daniel",
+        "lastName": "Reis",
+        "userName": "tester_123",
+        "userPassword": "123456",
+        "confirmPassword": "123456",
+        "userWrongPass": "654321"
+
+    }
+}
