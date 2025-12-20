@@ -1,7 +1,9 @@
 {
     "userSuccess":{
-        "userName": "Judah_Dietrich50",
-        "userPassword": "s3cret"
+        "userName": "Heath93",
+        "userPassword": "s3cret",
+        "userNameTest": "tester_1",
+        "userPasswordTest": "123456"
     },
     "userFail":{
         "userName": "wrongName",

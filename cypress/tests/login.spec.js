@@ -3,10 +3,14 @@ import userData from '../fixtures/userData.json'
 import LoginPage from '../pages/loginPage'
 import SignupPage from '../pages/signupPage.js'
 import SignupFail from '../pages/signupFail.js'
+import PaymentDone from '../pages/paymentDone.js'
+import TransactionHist from '../pages/transactionHist.js'
 
 const loginPage = new LoginPage ()
 const signupPage = new SignupPage ()
 const signupFail = new SignupFail ()
+const paymentDone = new PaymentDone ()
+const transactionHist = new TransactionHist ()
 
 describe('projeto-rwa', () => {
   
@@ -48,7 +52,7 @@ describe('projeto-rwa', () => {
   })
 
 
-  it.only('SignUp fail', () => {
+  it('SignUp fail', () => {
 
     signupPage.accessLoginPage()
 
@@ -62,6 +66,31 @@ describe('projeto-rwa', () => {
     signupFail.testCase2(userData.userSignup.firstName,userData.userSignup.lastName, userData.userSignup.userName,
       userData.userSignup.userPassword, userData.userSignup.userWrongPass
     )
+
+  })
+
+  it('Transfer with money',() => {
+    paymentDone.accessLoginPage()
+    loginPage.loginWithUser(userData.userSuccess.userName, userData.userSuccess.userPassword)  
+    paymentDone.transferValue()
+
+
+  })
+
+  it.only('transaction historic', () => {
+
+    transactionHist.accessLoginPage()
+    loginPage.loginWithUser(userData.userSuccess.userName, userData.userSuccess.userPassword)
+    transactionHist.selectHist()
+    paymentDone.transferValue()
+    transactionHist.selectHist()
+    transactionHist.logOut()
+    signupPage.accessLoginPage() 
+    signupPage.createUser(userData.userSignup.firstName, userData.userSignup.lastName, 
+      userData.userSignup.userName, userData.userSignup.userPassword, userData.userSignup.userPassword)
+    loginPage.loginWithUser(userData.userSignup.userName, userData.userSignup.userPassword)
+    //transactionHist.crateAccount()  
+    transactionHist.selectHist()
 
   })
 
