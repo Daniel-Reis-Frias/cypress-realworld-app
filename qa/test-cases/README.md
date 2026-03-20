@@ -1,7 +1,7 @@
 # 🧪 QA - Processo de Testes
 
 ## 📌 Objetivo
-Validar a funcionalidade de criação de personagens (Heroes)
+Verificar as funcionalidades fundamentais no aplicativo Real World App, permitindo que os usuários acessem suas contas existentes ou criem novas contas, façam transações e verifiquem seus históricos.
 
 ## 🧪 Tipo de Teste
 - Testes manuais
@@ -12,13 +12,11 @@ Os casos de teste estão disponíveis na pasta:
 - test-cases/
 
 ## 🔍 Cobertura dos Testes
-- Criação de personagem
-- Validação de campos obrigatórios
-- Prevenção de duplicidade
+- Features "Login" e "Registro de Usuário"
+- Feature "Enviar Dinheiro"
+- Histórico de Transações
 
 ## 🛠 Ferramentas utilizadas
 - Cypress (para automação futura)
 - Excel (modelagem dos testes)
 
-## 🚀 Próximos passos
-- Automatizar cenários críticos com Cypress
